@@ -6,6 +6,7 @@
   - [[#create-the-swap-file][Create the swap file]]
   - [[#prepare-the-swap-file][Prepare the swap file]]
   - [[#restrict-swap-file-permissions][Restrict swap file permissions]]
+  - [[#use-the-swap-file][Use the Swap File]]
 
 ** Set the size and location the swap file
 
@@ -33,4 +34,10 @@ sudo mkswap $FILE
 
 #+BEGIN_SRC sh
 sudo chmod 600 $FILE
+#+END_SRC
+
+** Use the Swap File
+
+#+BEGIN_SRC sh
+sudo swapon $FILE
 #+END_SRC
