@@ -1,3 +1,15 @@
 #+TITLE: Manual swap file creation in linux
 #+PROPERTY: header-args :session *shell linux* :results silent raw
 
+** Contents                                                           :TOC_3:
+  - [[#set-the-swap-file-size-and-location][Set the swap file size and location]]
+
+** Set the swap file size and location
+
+#+BEGIN_SRC sh
+SIZE=1048576  # in kb
+#+END_SRC
+
+#+BEGIN_SRC sh
+FILE="/swapfile"
+#+END_SRC
