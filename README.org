@@ -3,6 +3,7 @@
 
 ** Contents                                                           :TOC_3:
   - [[#set-the-size-and-location-the-swap-file][Set the size and location the swap file]]
+  - [[#create-the-swap-file][Create the swap file]]
 
 ** Set the size and location the swap file
 
@@ -12,4 +13,10 @@ SIZE=1048576  # in kb
 
 #+BEGIN_SRC sh
 FILE="/swapfile"
+#+END_SRC
+
+** Create the swap file
+
+#+BEGIN_SRC sh
+sudo dd if=/dev/zero of=$FILE bs=1024 count=$SIZE
 #+END_SRC
