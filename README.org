@@ -7,6 +7,7 @@
   - [[#prepare-the-swap-file][Prepare the swap file]]
   - [[#restrict-swap-file-permissions][Restrict swap file permissions]]
   - [[#use-the-swap-file][Use the Swap File]]
+  - [[#add-swap-file-to-the-fstab][Add swap file to the fstab]]
 
 ** Set the size and location the swap file
 
@@ -40,4 +41,10 @@ sudo chmod 600 $FILE
 
 #+BEGIN_SRC sh
 sudo swapon $FILE
+#+END_SRC
+
+** Add swap file to the fstab
+
+#+BEGIN_SRC sh
+sudo echo "$FILE    none    swap    sw    0    0" >> /etc/fstab
 #+END_SRC
