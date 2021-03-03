@@ -1,0 +1,3 @@
+#+TITLE: Manual swap file creation in linux
+#+PROPERTY: header-args :session *shell linux* :results silent raw
+
