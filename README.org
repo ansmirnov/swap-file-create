@@ -2,9 +2,9 @@
 #+PROPERTY: header-args :session *shell linux* :results silent raw
 
 ** Contents                                                           :TOC_3:
-  - [[#set-the-swap-file-size-and-location][Set the swap file size and location]]
+  - [[#set-the-size-and-location-the-swap-file][Set the size and location the swap file]]
 
-** Set the swap file size and location
+** Set the size and location the swap file
 
 #+BEGIN_SRC sh
 SIZE=1048576  # in kb
