@@ -32,5 +32,5 @@ sudo mkswap $FILE
 ** Restrict swap file permissions
 
 #+BEGIN_SRC sh
-chmod 600 $FILE
+sudo chmod 600 $FILE
 #+END_SRC
